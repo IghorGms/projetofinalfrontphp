@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* website vars */
+:root {
+    --text-main: #100101;
+    --text-second: #000000ad;
+    --main-bg: #B5C9FE;
+    --item-active: #468be6;
+    --primary: #6B43FF;
+    --primary-light: #6667B0;
+    --violet-light: #B492FD;
+    --secondary: #1D1D1D;
+    --white: #F4F1FF;
+    --text: #323760;
+    --info-side-background: #ad4ef5;
+    --main-font: 'inter';
+    --mainText-size: 1.9em;
+    --secondText-size: 1em;
+    --cardText-size: 0.75em;
+    --button-size: 0.7em;
+    --indexBgColor: rgba(175, 174, 174, 0.448);
+}
+
+
+body{
+    background-color: rgba(175, 174, 174, 0.448);
+    color: var(--text-main);
+    font-family: var(--main-font); 
+    max-width: 100%
+}
+
+.main-container{
+    display: grid;
+    text-align: center;
+    margin-top: 200px;
+    color: var(--text-main);
+}
+
+
+.navbar-menu {
+    display: none;
+    background-color: var(--main-bg);
+    
+}
+
+.navbar-brand{
+    background-color: var(--main-bg);
+}
+
+
+.navbar{
+    border: 1px solid black;
+    background-color: var(--main-bg);
+    font-weight: bold;
+    color: var(--text-main);
+}
+
+.navbar-burger {
+    background-color: var(--main-bg);
+    cursor: pointer;
+}
+
+.navbar-burger:hover {
+    opacity: 0.7;
+}
+
+
+.navbar-burger span{
+    border: 1px solid var(--button-bg);
+    height: 2px;
+    width: 20px;
+}
+
+.main{
+    /* background-image: url("../assets/dentinho.jpg"); */
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-size: 90%;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__box{
+    margin: 0 6em;
+    font-size: var(--mainText-size);
+}
+
+.container__titulo{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.container__img{
+    margin: 5% 0 2% 0;
+}
+
+.container__botao{
+    background-color: var(--button-bg);
+    border-radius: 5px;
+    margin-bottom: 1em;
+    padding: 1em;
+    color: var(--text-main);
+    text-decoration: none;
+    display: block;
+}
+
+.container__botao:hover{
+    border: 2px solid var(--item-active);
+}
+
+.botao__acesse{
+    background-color: transparent;
+    border: 2px solid var(--text-main);
+}
+
+.container__aviso{
+    font-size: 1em;
+    color: var(--text-second);
+    margin-bottom: 80px;
+}
+
+.second__img{
+    width: 80%;
+}
+
+.second, container{
+    align-items: center;
+    margin: 0 20em;
+    padding-bottom: 90px;
+
+}
+
+.second__container__description__title{
+    font-weight: 700;
+    font-size: 3.5em;
+    color: var(--text-main);
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+}
+
+.second__container__description__text{
+    color: var(--text-second);
+}
+
+.second__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.second__container__description{
+    padding: 2em;
+}
+
+
+.devices__title{
+    text-align: center;
+    width: 100%;
+    font-size: 3.5em;
+    color: var(--text-main);
+}
+
+.devices__list{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style-type:  none;
+    margin: 5em 0;
+}
+
+.devices__list__item{
+    font-size: 2em;
+    color: var(--text-main);
+}
+
+.rodape{
+    text-align: center;
+    background-color: var(--main-bg);
+    padding: 20px 0;
+    
+  }
+  
+  
+  .rodape__list{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+  
+  .list__link a{
+    text-decoration: none;
+    color: var(--text-main);
+    margin-left: 1em;
+  }
+  
+  .list__link a:hover{
+    color: var(--button-bg);
+  }
+  .list__link a:active{
+    color: var(--item-active);
+  }
+  
+  .rodape__text{
+    color: var(--text-second);
+    font-size: 1em;
+  }  
+  
+

@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-main: #100101;
+    --text-second: #000000ad;
+    --main-bg: #B5C9FE;
+    --item-active: #468be6;
+    --primary: #6B43FF;
+    --primary-light: #6667B0;
+    --violet-light: #B492FD;
+    --secondary: #1D1D1D;
+    --white: #F4F1FF;
+    --text: #323760;
+    --info-side-background: #ad4ef5;
+    --main-font: 'inter';
+    --mainText-size: 1.9em;
+    --secondText-size: 1em;
+    --cardText-size: 0.75em;
+    --button-size: 0.7em;
+}
+
+body{
+    background-color: var(--main-bg);
+}
+
+.navbar{
+    border: 1px solid black;
+    background-color: var(--main-bg);
+    font-weight: bold;
+    color: var(--text-main);
+    padding: 0 0.7rem;
+}
+.navbar-burger {
+    cursor: pointer;
+}
+
+.navbar-burger:hover {
+    opacity: 0.7;
+}
+.navbar-burger span{
+    border: 1px solid var(--button-bg);
+    height: 2px;
+    width: 20px;
+}
+
+.head{
+    text-align: center;
+    padding: 30px 0;
+    font-size: var(--mainText-size);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-bg);
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px 0;
+    background-color: var(--main-bg);
+}
+
+.container h2{
+    text-align: center;
+}
+
+
+.columns-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.column {
+    margin-bottom: 20px;
+    justify-content: center;
+    background-color: var(--main-bg);
+}
+  
+
+.box {
+    flex: 1;
+    margin: 30px 10px 40px; 
+    border: 1px solid var(--text-main);
+    box-sizing: border-box;
+}
+
+
+.columns {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Change to a column layout on smaller screens */
+    }
+
+    .box {
+        margin: 10px 0; /* Adjust spacing between boxes for smaller screens */
+    }
+}
+
+
+.button-box{
+    margin: 20px 0;
+    text-align: center;
+
+}
+
+button{ 
+    padding: 0 30px;
+    font-size: var(--secondText-size);
+}
+
+button:hover{
+    transform: scale(1.025);
+}
+
+.rodape{
+    text-align: center;
+    background-color: var(--main-bg);
+    padding: 20px 0;
+    
+  }
+  
+  
+  .rodape__list{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+  
+  .list__link a{
+    text-decoration: none;
+    color: var(--text-main);
+    margin-left: 1em;
+  }
+  
+  .list__link a:hover{
+    color: var(--button-bg);
+  }
+  .list__link a:active{
+    color: var(--item-active);
+  }
+  
+  .rodape__text{
+    color: var(--text-second);
+    font-size: 1em;
+  } 
+
+
